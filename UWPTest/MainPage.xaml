@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="UWPTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    SizeChanged="Page_SizeChanged">
+
+    <Grid x:Name="MainGrid"  Background="White">
+        <canvas:CanvasAnimatedControl x:Name="MainCanvas" Grid.ColumnSpan="2"
+                                      TargetElapsedTime="0:0:0.0167" 
+                                      ClearColor="Black" 
+                                      CreateResources="MainCanvas_CreateResources" 
+                                      Update="MainCanvas_Update" 
+                                      Draw="CanvasAnimatedControl_Draw" 
+                                      PointerWheelChanged="MainCanvas_PointerWheelChanged" 
+                                      PointerPressed="MainCanvas_PointerPressed"
+                                      PointerMoved="MainCanvas_PointerMoved"
+                                      PointerReleased="MainCanvas_PointerReleased"
+                                      />
+    </Grid>
+</Page>
