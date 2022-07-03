@@ -9,7 +9,7 @@
   <Identity
     Name="cb4fa23e-f154-43c2-b25f-6b53aaac8f3e"
     Publisher="CN=Jaygan-Zephyrus"
-    Version="1.0.1.0" />
+    Version="1.0.2.0" />
 
   <mp:PhoneIdentity PhoneProductId="cb4fa23e-f154-43c2-b25f-6b53aaac8f3e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
